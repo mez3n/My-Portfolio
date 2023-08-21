@@ -1,0 +1,345 @@
+$C_color:#0A6EBD;
+$In_color:#146C94;
+
+
+body{
+    background-color: #F6F1F1;
+    color: white;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+.firstComponent{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color:$C_color;
+    border-radius: 20px;
+
+ 
+}
+
+.headList{
+    font-size: 20px;
+    background-color: #AFD3E2;
+    border-radius: 10px;
+    list-style-type: none;
+    display: flex;
+    position: sticky;
+    top:7px;
+    align-self: flex-start;
+    justify-content:space-around;
+    width: 650px;
+    margin-left: 500px;
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight:3px;
+    }
+   
+   
+    
+}
+.roundButton{
+    background-color: #F8DE22;
+    font-weight:700;
+    color: black;
+    border: none;
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+.title{
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.mainImage{
+    height: 600px;
+
+}
+.identification{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    margin-left: 30px;
+
+     p{
+        margin: 5px;
+     }
+}
+
+.note{
+    color: #C70039 ;
+    font-weight: bold;
+    background-color:#F8DE22;
+    height: 60px;
+    width: 90px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-top: 170px;
+
+}
+.secondComponent
+{
+    border-radius: 20px;
+    background-color:$C_color ;
+    
+    img{
+        width:100px;
+    }
+}
+
+
+.skills,.table{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  gap:80px;
+}
+.services{
+   margin-left: 46%;
+   margin-top: 20px;
+   padding-top: 20px;
+   font-size: 40px;
+}
+.linux{
+    margin-left: 30px;
+    background-color:  $In_color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+   
+    margin-bottom: 30px;
+    p{
+        margin:auto;
+        font-size: 40px;
+    }
+
+    img{
+        width:200px  ;
+        margin:auto;
+        padding: 5px;
+        
+    }
+}
+.cpp{
+    background-color: $In_color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+   
+    margin-bottom: 30px;
+    p{
+        margin:auto;
+        font-size: 40px;
+       
+    }
+
+    img{
+        width:200px  ;
+        margin:auto;
+    }
+}
+.web{
+    background-color: $In_color;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 30px;
+   
+    margin-bottom: 30px;
+    p{
+        margin:auto;
+        font-size: 40px;
+       
+    }
+
+    img{
+        width:200px  ;
+        margin:auto;
+        margin-bottom: 30px;
+    }
+}
+
+.rec{
+    margin-left: 43%;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+ }
+
+ .thirdComponent
+{
+    border-radius: 20px;
+    background-color:$C_color ;
+   
+   
+    
+    img{
+       width:50px;
+       margin-left:300px;
+       position: relative;
+       top: 15px;
+       right: 310px;
+        
+    }
+    div{
+       
+        div{    
+        height: 150px;
+        margin-bottom: 50px;
+        padding: 20px;
+        background-color:$In_color;
+        border-radius: 30px;
+        
+        }
+    }
+    .table{
+        margin: 30px;
+    }
+
+.kapran{
+   position: relative;
+   top: -40px;
+   left: 50px;
+}
+
+}
+
+.fourthComponent
+{
+    border-radius: 20px;
+    background-color:$C_color ;
+    .roundButton{
+        background-color: $In_color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 5px;
+    }
+    .roundButtonwrapper{
+        margin-left: 31%;
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        
+    }
+ 
+   
+}
+.pro{
+    margin-left:46%;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.projectsTable{
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+    place-content: center;
+
+}
+
+.project{
+    background-color:$In_color;
+    border-radius: 30px;
+    width: 300px;
+    height: 350px;
+    margin-left: 100px;
+    
+    
+   p{
+    font-size: 30px;
+    position: relative;
+    top: -35px;
+    left: 70px;
+   }
+    img{
+        width:300px;
+    }
+    .git{
+        position: relative;
+        left: 250px;
+        top: -100px;
+        width: 40px;
+        height:40px;
+        font-weight: bold;
+        border: none;
+        border-radius: 50px;
+    }
+}
+
+
+
+.fifthComponent{
+
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    background-color:$C_color;
+    border-radius: 20px;
+    margin-top: 30px;
+    .roundButton{
+        background-color: $In_color;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left:43%;
+        
+    }
+    a{
+        color: white;
+        font-size: 30px;
+    }
+    .contacts
+    {
+        position: relative;
+        top:80px;
+        right:180px;
+        background-color: $In_color;
+        border-radius: 10px;
+        list-style-type: none;
+        display: flex;
+        align-self: flex-start;
+        justify-content:space-around;
+        width: 650px;
+        margin: 50px 300px;
+        
+    }
+    margin-bottom: 200px
+    
+}
+
+.selected{
+    border-color: white;
+    border-style: solid;
+
+}
+
