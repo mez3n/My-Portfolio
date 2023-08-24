@@ -4,7 +4,8 @@ window.addEventListener('DOMContentLoaded', () => {
   let cpp = document.getElementById('cpp');
   let Hardware = document.getElementById('Hardware');
   let cv = document.getElementById('CV');
-
+  let firstcomponent=document.getElementById('firstComponent');
+  let fifthcomponent=document.getElementById('fifthComponent');
 
 const webarr: { caption: string; img: string; link: string }[] = [
   {
@@ -81,6 +82,19 @@ Hardware?.addEventListener("click", function(){
   web?.classList.remove("selected");
   cpp?.classList.remove("selected");
 });
+
+
+window.onscroll=function(){
+  if(firstcomponent&&(document.body.scrollTop>(firstcomponent?.clientHeight)||document.documentElement.scrollTop > firstcomponent?.clientHeight))
+  {
+    document.getElementById('navbarid')?.classList.add("light");
+    document.getElementById('navbarid')?.classList.remove("dark");
+  }
+  else{
+    document.getElementById('navbarid')?.classList.add("dark");
+    document.getElementById('navbarid')?.classList.remove("light");
+  }
+}
 
 
 });

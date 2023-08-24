@@ -4,6 +4,8 @@ window.addEventListener('DOMContentLoaded', function () {
     var cpp = document.getElementById('cpp');
     var Hardware = document.getElementById('Hardware');
     var cv = document.getElementById('CV');
+    var firstcomponent = document.getElementById('firstComponent');
+    var fifthcomponent = document.getElementById('fifthComponent');
     var webarr = [
         {
             caption: "Portfolio",
@@ -72,4 +74,15 @@ window.addEventListener('DOMContentLoaded', function () {
         web === null || web === void 0 ? void 0 : web.classList.remove("selected");
         cpp === null || cpp === void 0 ? void 0 : cpp.classList.remove("selected");
     });
+    window.onscroll = function () {
+        var _a, _b, _c, _d;
+        if (firstcomponent && (document.body.scrollTop > (firstcomponent === null || firstcomponent === void 0 ? void 0 : firstcomponent.clientHeight) || document.documentElement.scrollTop > (firstcomponent === null || firstcomponent === void 0 ? void 0 : firstcomponent.clientHeight))) {
+            (_a = document.getElementById('navbarid')) === null || _a === void 0 ? void 0 : _a.classList.add("light");
+            (_b = document.getElementById('navbarid')) === null || _b === void 0 ? void 0 : _b.classList.remove("dark");
+        }
+        else {
+            (_c = document.getElementById('navbarid')) === null || _c === void 0 ? void 0 : _c.classList.add("dark");
+            (_d = document.getElementById('navbarid')) === null || _d === void 0 ? void 0 : _d.classList.remove("light");
+        }
+    };
 });

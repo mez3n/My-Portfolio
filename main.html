@@ -1,87 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mazen Adel portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/0616cf5036.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./main.js"></script>
-    <link rel="stylesheet" href="main.css">
-   
-</head>
-<body>
-    
-    <div class="headList">
-        <a href ="#firstComponent">Home</a>
-        <a href="#secondComponent">Services</a>
-        <a href ="#thirdComponent">Recommendations</a>
-        <a href="#fourthComponent">Projects</a>
-        <a href="#fifthComponent">Contacts</a>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="navwrap" id="navbarid">
+      <div class="navbar">
+        <p class="title">Mazen Adel</p>
+        <div class="headList">
+          <a href="#firstComponent">Home</a>
+          <a href="#secondComponent">Skills</a>
+          <a href="#thirdComponent">Recommendations</a>
+          <a href="#fourthComponent">Projects</a>
+          <a href="#fifthComponent">Contacts</a>
+        </div>
+      </div>
     </div>
-    <div class="main" >
-        <div  id ="firstComponent" class="firstComponent">
-            <span class="title">Mazen Adel</span>
-           
-           
-            <div class="identification">
-                <p>Hello,I'm</p>
-                <p>Mazen Adel</p>
-                <p>An Engineer</p>
-                <a href = "CV.pdf" download = "Mazen-Adel-CV"><button class="roundButton" id ="CV">Download CV</button></a>
-                </div>
-                
-                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png" class="mainImage">
-               
-        </div>
 
-        <div id ="secondComponent"  class="secondComponent">
-            <div><p class="services" >Services</p></div>
-            <div class="skills">
-            <div class ="linux"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png" class="redhat"><p>Linux Adminstration</p></div>
-            <div class ="cpp"><img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="cpp"><p>C++</p></div>
-            <div class="web"><img src="https://www.svgrepo.com/show/202992/web-design.svg" class="webdesign"><p>Web Design</p></div>
-            </div>
+    <div class="main">
+      <div id="firstComponent" class="firstComponent">
+        <div class="identification">
+          <div class="hello">
+            <p>Hello,I'm</p>
+            <p>Mazen Adel</p>
+            <p>An Engineer</p>
+            <a href="CV.pdf" download="Mazen-Adel-CV"
+              ><button class="roundButton" id="CV">Download CV</button></a
+            >
+          </div>
+          <div class="icon">
+            <i class="fa fa-solid fa-user-tie fa-8x" style="color: #102c57"></i>
+          </div>
         </div>
+      </div>
 
-        <div id ="thirdComponent"  class="thirdComponent">
-            <div><p class="rec" >Recommendations</p></div>
-            <div class="table">
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem quia, veritatis a illum accusantium excepturi laborum dicta asperiores! Nam cupiditate eos illo sunt! Repudiandae veritatis laboriosam voluptate facilis nulla?
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png"><p class ="kapran">Kapran James CEO of Facebook</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem quia, veritatis a illum accusantium excepturi laborum dicta asperiores! Nam cupiditate eos illo sunt! Repudiandae veritatis laboriosam voluptate facilis nulla?
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png" ><p class ="kapran">Kapran James CEO of Facebook</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quidem quia, veritatis a illum accusantium excepturi laborum dicta asperiores! Nam cupiditate eos illo sunt! Repudiandae veritatis laboriosam voluptate facilis nulla?
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png" ><p class ="kapran">Kapran James CEO of Facebook</p></div>
+      <div id="secondComponent" class="secondComponent">
+        <div><p class="services">Skills</p></div>
+        <div width="100%">
+          <div class="skills">
+            <div class="linux">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png"
+                class="redhat"
+              />
+              <p>Linux Adminstration</p>
             </div>
+            <div class="cpp">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png"
+                class="cpp"
+              />
+              <p>C++</p>
+            </div>
+            <div class="web">
+              <img
+                src="https://www.svgrepo.com/show/202992/web-design.svg"
+                class="webdesign"
+              />
+              <p>Web Design</p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div id="fourthComponent" class ="fourthComponent">
-            <p class="pro">projects</p>
-            <div class ="roundButtonwrapper">
-            <p class ="roundButton" id="web">Web</p>
-            <p class ="roundButton" id="cpp">C++</p>
-            <p class ="roundButton" id="Hardware">Hardware</p>
+      <div id="thirdComponent" class="thirdComponent">
+        <div><p class="rec">Recommendations</p></div>
+        <div class="table">
+          <div class="recwrap">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              quidem quia, veritatis a illum accusantium excepturi laborum dicta
+              asperiores! Nam cupiditate eos illo sunt! Repudiandae veritatis
+              laboriosam voluptate facilis nulla?
+            </p>
+
+            <div class="credits">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png"
+              />
+              <p class="kapran">Kapran James CEO of Facebook</p>
             </div>
-            <div id="projectsDiv" class="projectsTable" >
-            <div class="project">  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png"><p>Paint game</p>
-            <a href="https://bard.google.com/" target="_blank"><img class="git"src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"></a></div>
+          </div>
+          <div class="recwrap">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              quidem quia, veritatis a illum accusantium excepturi laborum dicta
+              asperiores! Nam cupiditate eos illo sunt! Repudiandae veritatis
+              laboriosam voluptate facilis nulla?
+            </p>
+
+            <div class="credits">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png"
+              />
+              <p class="kapran">Kapran James CEO of Facebook</p>
             </div>
+          </div>
+          <div class="recwrap">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+              quidem quia, veritatis a illum accusantium excepturi laborum dicta
+              asperiores! Nam cupiditate eos illo sunt! Repudiandae veritatis
+              laboriosam voluptate facilis nulla?
+            </p>
+
+            <div class="credits">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png"
+              />
+              <p class="kapran">Kapran James CEO of Facebook</p>
+            </div>
+          </div>
         </div>
-        
-        <div id ="fifthComponent" class="fifthComponent">
-            <div class="roundButton">contacts</div>
-            <div class="contacts">
-                    <a href ="tel:+201152794877"target="_blank">Call Me</a>
-                    <a href="https://wa.me/+201152794877"target="_blank">Whatsapp</a>
-                    <a href="mailto:mez3n1151@gmail.com"target="_blank">Mail</a>
-            </div>
+      </div>
+
+      <div id="fourthComponent" class="fourthComponent">
+        <p class="pro">Projects</p>
+
+        <div class="roundButtonwrapper">
+          <p class="roundButton" id="web">Web</p>
+          <p class="roundButton" id="cpp">C++</p>
+          <p class="roundButton" id="Hardware">Hardware</p>
         </div>
-             
-            
+        <div id="projectsDiv" class="projectsTable"></div>
+      </div>
 
-
-         
-        
-        
+      <div id="fifthComponent" class="fifthComponent">
+        <div class="contactsTitle">Contacts</div>
+        <div class="conwrap">
+          <div class="contacts">
+            <a href="tel:+201152794877" target="_blank">Call Me</a>
+            <a href="https://wa.me/+201152794877" target="_blank">Whatsapp</a>
+            <a href="mailto:mez3n1151@gmail.com" target="_blank">Mail</a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

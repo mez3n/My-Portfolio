@@ -1,345 +1,409 @@
-$C_color:#0A6EBD;
-$In_color:#146C94;
+$C_color: #0a6ebd;
+$In_color: #4F709C ;
+$beige:#dac0a3;
+$blue: #102c57;
 
+body {
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+}
 
-body{
-    background-color: #F6F1F1;
+.firstComponent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: white;
+  color: #102c57;
+  min-height: 95vh;
+  max-width:100%;
+  button:hover {
+    cursor: pointer;
+  }
+  a:hover {
+    cursor: default;
+  }
+}
+.navbar {
+  display: flex;
+  max-width: 80%;
+  font-size: 30px;
+  color: $beige;
+  flex-wrap: nowrap;
+  margin: auto;
+  justify-content: space-between;
+  font-weight:lighter;
+  font-family: Georgia, serif;
+}
+.navwrap {
+  background-color:#102c57;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+}
+
+.headList {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-self: center;
+  overflow: hidden;
+  font-size: 20px;
+
+  a {
+    text-decoration: none;
     color: white;
-    height: auto;
+    font-weight: 3px;
+  }
+}
+.roundButton {
+  background-color: #f8de22;
+  font-weight: 700;
+  color: black;
+  border: none;
+  height: 40px;
+  width: 140px;
+  border-radius: 20px;
+}
 
+.icon{
+  margin-top: 20px;
+}
+.identification {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 80vw;
+  min-height: 80vh;
+  align-self: center;
+  margin-top: 80px;
+  background-color:#e8f4f8;
+  color: $beige;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 80px;
+  p {
+    margin: 5px;
+  }
+  .hello
+  {
+    margin-top: 30px;
+  }
+  .roundButton
+  {
+    background-color: white;
+    color: $beige;
+    border: 2px;
+    border-style: solid;
+    border-radius: 15px;
+  }
+}
+
+.secondComponent {
+  max-width: 100%;
+  min-height: 95vh;
+  background-color: white;
+  color:#dac0a3 ;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.services {
+  font-size: 80px;
+  align-self: center;
+  font-family: 'Trebuchet MS', sans-serif;
+  &:before {
+    font-size: 30px;
+    content: "_________________________";
+    color: $beige;
+    position: relative;
+    top: -30px;
+    right: -45px;
+    left: -45px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &:after {
+    font-size: 30px;
+    content: "_________________________";
+    color: $beige;
+    position: relative;
+    top: -30px;
+    right: -45px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
 }
 
 
 
+.skills {
+  display: flex;
+  justify-content: space-around;
+  flex-flow:row wrap;
+  margin-bottom: 70px;
 
-
-
-
-.firstComponent{
-    margin-top: 20px;
+  div {
+    width: 60vh;
+    min-height: 40vh;
+    background-color: white;
+    color: $beige;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    background-color:$C_color;
-    border-radius: 20px;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+    border: $beige;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    p {
+      font-size: 40px;
+    }
 
+    img {
+      max-width: 50%;
+      height: auto;
+      padding: 10px;
+    }
+  }
+}
+
+.rec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color:#dac0a3 ;
+  &:before {
+    font-size: 30px;
+    content: "_________________________";
+    color: $beige;
+    position: relative;
+    top: -10px;
+    right: -45px;
+    left: -45px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &:after {
+    font-size: 30px;
+    content: "_________________________";
+    color: $beige;
+    position: relative;
+    top: -10px;
+    right: -45px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.thirdComponent {
+  background-color: white;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  img {
+    max-width: 60px;
+  }
+  .table {
+    max-width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+  
+  }
+  .recwrap{
+    min-width: 300px;
+    max-width: 25vw;
+    min-height: 25vw;
+    display: flex;
+    flex-flow: wrap column;
+    padding: 1%;
+    font-size: 30px;
+    background-color: white;
+    color: $beige;
+    border-style: solid ;
+    border-color: $beige ;
+    font-family: sans-serif;
+    .credits {
+        display: flex;
+        flex-flow:row wrap;
+        font-size: 20px;
+    }
+  }
+}
+
+.fourthComponent {
+  display: flex;
+  flex-flow:wrap column;
+  justify-content: space-around;
+  min-height: 95vh;
+  width: auto;
+  background-color:white;
+  color: black;
+  .roundButton {
+    background-color: $In_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 5px;
+  }
+  .roundButtonwrapper {
+    align-self: center;
+    display: flex;
+    width: auto;
+    .roundButton{
+      margin: 20px;
+      color: white;
+      background-color: $beige;
+    }
+  }
+}
+.pro {
+  align-self: center;
+  font-size: 80px;
+  font-family: 'Trebuchet MS', sans-serif;
+  color: $beige;
+  &:before {
+    font-size: 30px;
+    content: "_________________________";
+    color: $beige;
+    position: relative;
+    top: -30px;
+    right: -45px;
+    left: -45px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &:after {
+    font-size: 30px;
+    content: "_________________________";
+    color: $beige;
+    position: relative;
+    top: -30px;
+    right: -45px;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+    }
+}
+.projectsTable {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: space-around;
  
 }
 
-.headList{
-    font-size: 20px;
-    background-color: #AFD3E2;
-    border-radius: 10px;
+.project {
+  background-color: white;
+  color: $beige;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-style: solid;
+  border-color: $beige;
+
+  p {
+    font-size: 30px;
+  }
+  img {
+    max-width: 300px;
+  }
+  .git {
+    width: 40px;
+    margin-top: 25px;
+    margin-left: 20px;
+  }
+}
+
+.fifthComponent {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $beige;
+  justify-content: space-around;
+  font-size: 50px;
+  max-width: 100%;
+  min-height: 95vh;
+  .contactsTitle {
+    align-self: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 80px;
+   
+  }
+  a {
+    color: white;
+  }
+  .contacts {
     list-style-type: none;
     display: flex;
-    position: sticky;
-    top:7px;
-    align-self: flex-start;
-    justify-content:space-around;
-    width: 650px;
-    margin-left: 500px;
-    a {
-        text-decoration: none;
-        color: black;
-        font-weight:3px;
-    }
-   
-   
-    
-}
-.roundButton{
-    background-color: #F8DE22;
-    font-weight:700;
-    color: black;
-    border: none;
-    height: 40px;
-    width: 140px;
-    border-radius: 20px;
-    margin-right: 100px;
-    margin-top: 30px;
-}
-.title{
-    margin-left: 20px;
-    font-size: 40px;
-    margin-top: 20px;
-}
-.mainImage{
-    height: 600px;
-
-}
-.identification{
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    margin-left: 30px;
-
-     p{
-        margin: 5px;
-     }
-}
-
-.note{
-    color: #C70039 ;
-    font-weight: bold;
-    background-color:#F8DE22;
-    height: 60px;
-    width: 90px;
-    padding: 5px;
-    border-radius: 20px;
-    margin-top: 170px;
-
-}
-.secondComponent
-{
-    border-radius: 20px;
-    background-color:$C_color ;
-    
-    img{
-        width:100px;
-    }
-}
-
-
-.skills,.table{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  gap:80px;
-}
-.services{
-   margin-left: 46%;
-   margin-top: 20px;
-   padding-top: 20px;
-   font-size: 40px;
-}
-.linux{
-    margin-left: 30px;
-    background-color:  $In_color;
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 50px;
-   
-    margin-bottom: 30px;
-    p{
-        margin:auto;
-        font-size: 40px;
-    }
-
-    img{
-        width:200px  ;
-        margin:auto;
-        padding: 5px;
-        
-    }
-}
-.cpp{
-    background-color: $In_color;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 50px;
-   
-    margin-bottom: 30px;
-    p{
-        margin:auto;
-        font-size: 40px;
-       
-    }
-
-    img{
-        width:200px  ;
-        margin:auto;
-    }
-}
-.web{
-    background-color: $In_color;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 50px;
-    margin-right: 30px;
-   
-    margin-bottom: 30px;
-    p{
-        margin:auto;
-        font-size: 40px;
-       
-    }
-
-    img{
-        width:200px  ;
-        margin:auto;
-        margin-bottom: 30px;
-    }
-}
-
-.rec{
-    margin-left: 43%;
-    margin-top: 20px;
-    padding-top: 20px;
-    font-size: 40px;
- }
-
- .thirdComponent
-{
-    border-radius: 20px;
-    background-color:$C_color ;
-   
-   
-    
-    img{
-       width:50px;
-       margin-left:300px;
-       position: relative;
-       top: 15px;
-       right: 310px;
-        
-    }
-    div{
-       
-        div{    
-        height: 150px;
-        margin-bottom: 50px;
-        padding: 20px;
-        background-color:$In_color;
-        border-radius: 30px;
-        
-        }
-    }
-    .table{
-        margin: 30px;
-    }
-
-.kapran{
-   position: relative;
-   top: -40px;
-   left: 50px;
-}
-
-}
-
-.fourthComponent
-{
-    border-radius: 20px;
-    background-color:$C_color ;
-    .roundButton{
-        background-color: $In_color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        padding: 5px;
-    }
-    .roundButtonwrapper{
-        margin-left: 31%;
-        display: grid;
-        grid-template-columns: 20% 20% 20%;
-        
-    }
- 
-   
-}
-.pro{
-    margin-left:46%;
-    margin-top: 20px;
-    padding-top: 20px;
-    font-size: 40px;
-}
-.projectsTable{
-
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    justify-content: center;
-    padding: 50px;
-    place-content: center;
-
-}
-
-.project{
-    background-color:$In_color;
-    border-radius: 30px;
-    width: 300px;
-    height: 350px;
-    margin-left: 100px;
-    
-    
-   p{
-    font-size: 30px;
-    position: relative;
-    top: -35px;
-    left: 70px;
-   }
-    img{
-        width:300px;
-    }
-    .git{
-        position: relative;
-        left: 250px;
-        top: -100px;
-        width: 40px;
-        height:40px;
-        font-weight: bold;
-        border: none;
-        border-radius: 50px;
-    }
-}
-
-
-
-.fifthComponent{
-
-    height: 200px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    background-color:$C_color;
-    border-radius: 20px;
-    margin-top: 30px;
-    .roundButton{
-        background-color: $In_color;
-        font-size: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        left:43%;
-        
-    }
+    justify-content: space-around;
+    max-width: 100%;
+    min-height: 10vh;
+    align-self: center;
     a{
-        color: white;
-        font-size: 30px;
+      margin: 10px 40px 10px 40px;
+      color: white;
     }
-    .contacts
-    {
-        position: relative;
-        top:80px;
-        right:180px;
-        background-color: $In_color;
-        border-radius: 10px;
-        list-style-type: none;
-        display: flex;
-        align-self: flex-start;
-        justify-content:space-around;
-        width: 650px;
-        margin: 50px 300px;
-        
-    }
-    margin-bottom: 200px
-    
+  }
+  .conwrap{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100vw;
+    align-self: center;
+  }
 }
 
-.selected{
-    border-color: white;
-    border-style: solid;
-
+.selected {
+  border-color: $In_color;
+  border-style: solid;
 }
 
+@media (max-width: 1200px) {
+  .headList {
+    display: none;
+  }
+  .navbar
+  {
+    justify-content: center;
+  }
+  .thirdComponent
+  {
+  // display: none;
+  }
+}
+.dark{
+  background-color: #102c57;
+  color: white;
+  transition: all 1s ease;
+ 
+  .title{
+    color: $beige;
+  }
+}
+.light{
+  background-color: #dac0a3;
+  color: white;
+  transition: all 1s ease;
+ 
+  .title{
+    color: white;
+  }
+}
