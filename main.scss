@@ -1,13 +1,19 @@
-$C_color: #0a6ebd;
-$In_color: #4F709C ;
-$beige:#dac0a3;
-$blue: #102c57;
 
+ $maincolor:#dac0a3;
+ $secondrycolor: #102c57;
+$In_color: #4F709C ;
+:export {
+  mainColor: $maincolor;
+  secondryColor:  $secondrycolor;
+}
+html { scroll-behavior: smooth;}
 body {
   background-color: white;
   color: white;
   display: flex;
   flex-flow: column wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 .firstComponent {
@@ -16,7 +22,6 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   background-color: white;
-  color: #102c57;
   min-height: 95vh;
   max-width:100%;
   button:hover {
@@ -30,12 +35,12 @@ body {
   display: flex;
   max-width: 80%;
   font-size: 30px;
-  color: $beige;
+  color:  $maincolor;
   flex-wrap: nowrap;
   margin: auto;
   justify-content: space-between;
   font-weight:lighter;
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navwrap {
   background-color:#102c57;
@@ -63,7 +68,6 @@ body {
 .roundButton {
   background-color: #f8de22;
   font-weight: 700;
-  color: black;
   border: none;
   height: 40px;
   width: 140px;
@@ -81,7 +85,7 @@ body {
   align-self: center;
   margin-top: 80px;
   background-color:#e8f4f8;
-  color: $beige;
+  color:  $maincolor;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -96,7 +100,7 @@ body {
   .roundButton
   {
     background-color: white;
-    color: $beige;
+    color:  $maincolor;
     border: 2px;
     border-style: solid;
     border-radius: 15px;
@@ -121,23 +125,23 @@ body {
   &:before {
     font-size: 30px;
     content: "_________________________";
-    color: $beige;
+    color:  $maincolor;
     position: relative;
     top: -30px;
     right: -45px;
     left: -45px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       display: none;
     }
   }
   &:after {
     font-size: 30px;
     content: "_________________________";
-    color: $beige;
+    color:  $maincolor;
     position: relative;
     top: -30px;
     right: -45px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       display: none;
     }
   }
@@ -155,13 +159,13 @@ body {
     width: 60vh;
     min-height: 40vh;
     background-color: white;
-    color: $beige;
+    color:  $maincolor;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 30px;
-    border: $beige;
+    border:  $maincolor;
     border-style: solid;
     border-width: 3px;
     border-radius: 30px;
@@ -187,23 +191,23 @@ body {
   &:before {
     font-size: 30px;
     content: "_________________________";
-    color: $beige;
+    color:  $maincolor;
     position: relative;
     top: -10px;
     right: -45px;
     left: -45px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       display: none;
     }
   }
   &:after {
     font-size: 30px;
     content: "_________________________";
-    color: $beige;
+    color:  $maincolor;
     position: relative;
     top: -10px;
     right: -45px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       display: none;
     }
   }
@@ -230,14 +234,15 @@ body {
     min-width: 300px;
     max-width: 25vw;
     min-height: 25vw;
+    margin: 20px;
     display: flex;
     flex-flow: wrap column;
     padding: 1%;
     font-size: 30px;
     background-color: white;
-    color: $beige;
+    color:  $maincolor;
     border-style: solid ;
-    border-color: $beige ;
+    border-color:  $maincolor ;
     font-family: sans-serif;
     .credits {
         display: flex;
@@ -252,9 +257,7 @@ body {
   flex-flow:wrap column;
   justify-content: space-around;
   min-height: 95vh;
-  width: auto;
-  background-color:white;
-  color: black;
+  
   .roundButton {
     background-color: $In_color;
     display: flex;
@@ -266,11 +269,12 @@ body {
   .roundButtonwrapper {
     align-self: center;
     display: flex;
-    width: auto;
+    flex-wrap: wrap;
+    min-width: 30vw;
+    justify-content: space-around;
     .roundButton{
-      margin: 20px;
       color: white;
-      background-color: $beige;
+      background-color:  $maincolor;
     }
   }
 }
@@ -278,53 +282,65 @@ body {
   align-self: center;
   font-size: 80px;
   font-family: 'Trebuchet MS', sans-serif;
-  color: $beige;
+  color:  $maincolor;
   &:before {
     font-size: 30px;
     content: "_________________________";
-    color: $beige;
+    color:  $maincolor;
     position: relative;
     top: -30px;
     right: -45px;
     left: -45px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       display: none;
     }
   }
   &:after {
     font-size: 30px;
     content: "_________________________";
-    color: $beige;
+    color:  $maincolor;
     position: relative;
     top: -30px;
     right: -45px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       display: none;
     }
     }
 }
 .projectsTable {
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  margin: 20px;
  
 }
 
 .project {
   background-color: white;
-  color: $beige;
+  color:  $maincolor;
   width: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   border-style: solid;
-  border-color: $beige;
+  border-color:  $maincolor;
+  margin: 10px;
+
+ 
+  &:hover
+  {
+    animation: 1s ease infinite pulse;
+    border-color: $secondrycolor;
+    transition: all 1s ease;
+  }
 
   p {
     font-size: 30px;
+    margin-left:10px;
   }
   img {
-    max-width: 300px;
+    max-width: 240px;
+    margin: 20px;
   }
   .git {
     width: 40px;
@@ -336,7 +352,7 @@ body {
 .fifthComponent {
   display: flex;
   flex-flow: column wrap;
-  background-color: $beige;
+  background-color:  $secondrycolor;
   justify-content: space-around;
   font-size: 50px;
   max-width: 100%;
@@ -345,11 +361,9 @@ body {
     align-self: center;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 80px;
-   
+
   }
-  a {
-    color: white;
-  }
+ 
   .contacts {
     list-style-type: none;
     display: flex;
@@ -358,6 +372,7 @@ body {
     max-width: 100%;
     min-height: 10vh;
     align-self: center;
+ 
     a{
       margin: 10px 40px 10px 40px;
       color: white;
@@ -372,7 +387,7 @@ body {
 }
 
 .selected {
-  border-color: $In_color;
+  border-color:  $secondrycolor;
   border-style: solid;
 }
 
@@ -384,10 +399,6 @@ body {
   {
     justify-content: center;
   }
-  .thirdComponent
-  {
-  // display: none;
-  }
 }
 .dark{
   background-color: #102c57;
@@ -395,7 +406,7 @@ body {
   transition: all 1s ease;
  
   .title{
-    color: $beige;
+    color:  $maincolor;
   }
 }
 .light{

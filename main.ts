@@ -10,39 +10,41 @@ window.addEventListener('DOMContentLoaded', () => {
 const webarr: { caption: string; img: string; link: string }[] = [
   {
     caption: "Portfolio",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-    link: "https://bard.google.com/",
+    img: "file.svg",
+    link: "https://www.google.com.eg/?hl=ar",
   },
   {
     caption: "Portfolio",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-    link: "https://bard.google.com/",
+      img: "file.svg",
+    link: "https://www.google.com.eg/?hl=ar",
   },
+ 
+  
 ];
 
 const cpparr: { caption: string; img: string; link: string }[] = [
   {
     caption: "Paint game",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-    link: "https://bard.google.com/",
+      img: "file.svg",
+    link: "https://www.google.com.eg/?hl=ar",
   },
   {
     caption: "Paint game",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-    link: "https://bard.google.com/",
+      img: "file.svg",
+    link: "https://www.google.com.eg/?hl=ar",
   },
 ];
 
 const hardarr: { caption: string; img: string; link: string }[] = [
   {
     caption: "AES",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-    link: "https://bard.google.com/",
+      img: "file.svg",
+    link: "https://www.google.com.eg/?hl=ar",
   },
   {
     caption: "AES",
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-    link: "https://bard.google.com/",
+      img: "file.svg",
+    link: "https://www.google.com.eg/?hl=ar",
   },
 ];
 

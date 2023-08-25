@@ -1,8 +1,18 @@
+:export {
+  mainColor: #dac0a3;
+  secondryColor: #102c57;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
   color: white;
   display: flex;
   flex-flow: column wrap;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .firstComponent {
@@ -11,7 +21,6 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   background-color: white;
-  color: #102c57;
   min-height: 95vh;
   max-width: 100%;
 }
@@ -31,7 +40,7 @@ body {
   margin: auto;
   justify-content: space-between;
   font-weight: lighter;
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navwrap {
@@ -60,7 +69,6 @@ body {
 .roundButton {
   background-color: #f8de22;
   font-weight: 700;
-  color: black;
   border: none;
   height: 40px;
   width: 140px;
@@ -124,7 +132,7 @@ body {
   right: -45px;
   left: -45px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .services:before {
     display: none;
   }
@@ -137,7 +145,7 @@ body {
   top: -30px;
   right: -45px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .services:after {
     display: none;
   }
@@ -190,7 +198,7 @@ body {
   right: -45px;
   left: -45px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .rec:before {
     display: none;
   }
@@ -203,7 +211,7 @@ body {
   top: -10px;
   right: -45px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .rec:after {
     display: none;
   }
@@ -230,6 +238,7 @@ body {
   min-width: 300px;
   max-width: 25vw;
   min-height: 25vw;
+  margin: 20px;
   display: flex;
   flex-flow: wrap column;
   padding: 1%;
@@ -251,9 +260,6 @@ body {
   flex-flow: wrap column;
   justify-content: space-around;
   min-height: 95vh;
-  width: auto;
-  background-color: white;
-  color: black;
 }
 .fourthComponent .roundButton {
   background-color: #4F709C;
@@ -266,10 +272,11 @@ body {
 .fourthComponent .roundButtonwrapper {
   align-self: center;
   display: flex;
-  width: auto;
+  flex-wrap: wrap;
+  min-width: 30vw;
+  justify-content: space-around;
 }
 .fourthComponent .roundButtonwrapper .roundButton {
-  margin: 20px;
   color: white;
   background-color: #dac0a3;
 }
@@ -289,7 +296,7 @@ body {
   right: -45px;
   left: -45px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .pro:before {
     display: none;
   }
@@ -302,7 +309,7 @@ body {
   top: -30px;
   right: -45px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .pro:after {
     display: none;
   }
@@ -310,8 +317,9 @@ body {
 
 .projectsTable {
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
   justify-content: space-around;
+  margin: 20px;
 }
 
 .project {
@@ -323,12 +331,20 @@ body {
   justify-content: center;
   border-style: solid;
   border-color: #dac0a3;
+  margin: 10px;
+}
+.project:hover {
+  animation: 1s ease infinite pulse;
+  border-color: #102c57;
+  transition: all 1s ease;
 }
 .project p {
   font-size: 30px;
+  margin-left: 10px;
 }
 .project img {
-  max-width: 300px;
+  max-width: 240px;
+  margin: 20px;
 }
 .project .git {
   width: 40px;
@@ -339,7 +355,7 @@ body {
 .fifthComponent {
   display: flex;
   flex-flow: column wrap;
-  background-color: #dac0a3;
+  background-color: #102c57;
   justify-content: space-around;
   font-size: 50px;
   max-width: 100%;
@@ -349,9 +365,6 @@ body {
   align-self: center;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 80px;
-}
-.fifthComponent a {
-  color: white;
 }
 .fifthComponent .contacts {
   list-style-type: none;
@@ -374,7 +387,7 @@ body {
 }
 
 .selected {
-  border-color: #4F709C;
+  border-color: #102c57;
   border-style: solid;
 }
 

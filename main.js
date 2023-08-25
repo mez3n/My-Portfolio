@@ -9,37 +9,37 @@ window.addEventListener('DOMContentLoaded', function () {
     var webarr = [
         {
             caption: "Portfolio",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-            link: "https://bard.google.com/",
+            img: "file.svg",
+            link: "https://www.google.com.eg/?hl=ar",
         },
         {
             caption: "Portfolio",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-            link: "https://bard.google.com/",
+            img: "file.svg",
+            link: "https://www.google.com.eg/?hl=ar",
         },
     ];
     var cpparr = [
         {
             caption: "Paint game",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-            link: "https://bard.google.com/",
+            img: "file.svg",
+            link: "https://www.google.com.eg/?hl=ar",
         },
         {
             caption: "Paint game",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-            link: "https://bard.google.com/",
+            img: "file.svg",
+            link: "https://www.google.com.eg/?hl=ar",
         },
     ];
     var hardarr = [
         {
             caption: "AES",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-            link: "https://bard.google.com/",
+            img: "file.svg",
+            link: "https://www.google.com.eg/?hl=ar",
         },
         {
             caption: "AES",
-            img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1200px-Emblem-person-blue.svg.png",
-            link: "https://bard.google.com/",
+            img: "file.svg",
+            link: "https://www.google.com.eg/?hl=ar",
         },
     ];
     function displayProjects(arr) {
